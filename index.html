@@ -6,6 +6,14 @@
       <meta name = "viewport" content="width=device-width,initial-scale=1.0">
       <link rel = "stylesheet" href = "blueberry.css"/>
 <style type = "text/css">
+    #doc{
+        margin: 40px 0;}
+    #content{
+    margin: 0 auto;
+    max-width: 1140px;
+    }
+    .blueberry{
+        max-width: 9}
     * {
         margin: 0;
         padding: 0;
@@ -36,6 +44,7 @@
       text-decoration: none;
         font-weight: bold;
     }
+    
     a:hover{ 
         color: white;
         text-decoration:underline;
@@ -76,6 +85,63 @@ nav{ float:right;
     }
 .current{color: white;
     text-decoration: underline;}
+    section{float:left;
+     width: 29%;
+     margin: 2% 2%;
+     text-align: center;
+}
+.clear{ clear: both;}
+
+article {float:right;
+margin: 0 auto;
+width: 50%
+height:auto;
+padding :4%;}
+aside{float:left;
+margin: 0 auto;
+width: 50%
+height:auto;
+padding :4%;}
+ul li gym {padding-left: 3%;}
+footer{background-color: #333333;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.90;
+}
+footer h3,footer p{color:#FFF;}
+footer p a {color:#FFF;
+text-decoration: none;}
+ul.social li {
+    display: inline; }
+ul.socail li img{height: 50px;}
+footer.second {border-top: 1px solid #4D4E50;
+                opacity: 0.95;
+                background-color: #333333;
+                text-align: center;}
+/* ...........Media ..........*/
+@Media screen and (max-width: 478px){
+    body{ 
+        position: absolute;
+    }
+
+}
+@Media screen and (max-width: 478px){
+    header{
+        position: absolute;
+    }
+}
+#menu-icon{display: inline-block;}
+nav ul, nav: active ul{
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #405580;
+    border: 1px solid #FFF;
+    right:20px;
+    top:60px;
+    width: 50%
+    border-radius:2px 0 2px 2px;
+}
 </style>
 <script src = "https://ajaz.googleapis.com/ajax/libs/jquery/1.6.1/min.js"></script> <script src = "jquery.blueberry.js"></script>     
 <script>
@@ -91,9 +157,7 @@ nav{ float:right;
 <body>
     <header>
     <a href = "#" id = "logo"></a>
-      
-        
-        <nav>
+      <nav>
      <a href = "#" id = "menu-icon"></a>
         <ul>
             <li><a href = "#" class = "current">Home</a></li>
@@ -146,7 +210,7 @@ nav{ float:right;
 
         
 <aside>
-        <h2>class schedules</h2>
+        <h2>class schedules</h2><br>
         <ul class= "gym">
         <li><h3>Day 1 - Chest & Biceps</h3></li>    
         <li><h3>Day 2 - Cardio</h3></li>
@@ -154,42 +218,46 @@ nav{ float:right;
         <li><h3>Day 4 - Back & Triceps</h3></li> 
         <li><h3>Day 5 - Shoulders & Abs</h3></li>
             </ul>
-     </aside>
+</aside>
    <div class = "clear"></div>
     <section>
-      <h1>Ladies  Section</h1>
+      <h1>Ladies  Section</h1><br>
     <img src = "http://www.w3newbie.com/wp-content/uploads/gym-floor.jpg"/> 
 <p>We have "ladies only" section gym where women workout for themselves.</p>
  </section>
     <section>
-      <h1>The Gym Floor</h1>    
+      <h1>The Gym Floor</h1><br>    
     <img src = "http://www.w3newbie.com/wp-content/uploads/ladies-gym.jpg" /> 
 <p>Our gym floor is  as  spacious as they come. Enjoy scenic views from the  cardio equipment on the third floor.</p>
      </section>
     <section>
-      <h1>Free Weights</h1>
+      <h1>Free Weights</h1><br>
     <img src = "http://www.w3newbie.com/wp-content/uploads/free-weights.jpg"/> 
 <p>Our free weights section has an extensive collection of dumbells and olympic plates for body building</p>
-      
+</section>
 <footer>
+      
 <section>
+
 <h3><b>The Gym</b></h3>    
 <p><b>00245-554-677</b></p>    
-Address: Mama Ngina St, Nairobi, Kenya<br>
-trainer@thegym.com    
-</section>        
+<p>Address: Mama Ngina St, Nairobi, Kenya<br></p>
+<p>trainer@thegym.com  </p>  
+</section>
+
 <section>
-<ul class = "socail" >
+<ul class = "social" >
 <li><a href = "#"><img src = "http://www.w3newbie.com/wp-content/uploads/facebook1.png"/></a> </li>    
 <li><a href = "#"><img src = "http://www.w3newbie.com/wp-content/uploads/googleplus.png"/></a> </li>    
 <li><a href = "#"><img src = "http://www.w3newbie.com/wp-content/uploads/twitter1.png"/></a> </li>    
 <li><a href = "#"><img src = "http://www.w3newbie.com/wp-content/uploads/youtube1.png"/></a> </li>    
 </ul>
 </section>
-    
+
 <section>
-<li><img src = "http://www.w3newbie.com/wp-content/uploads/weight-lifter.png"/></li>    
+    <li><img src = "http://www.w3newbie.com/wp-content/uploads/weight-lifter.png"/></li>    
 </section>
+
 </footer>
 <footer class = "second">
 <p> &copy;Copyright 2015 </p>        
